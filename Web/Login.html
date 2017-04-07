@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="../AngularJS/ControladorLogin.js"></script>
+</head>
+
+<body>
+    <div ng-app="userApp" ng-controller="userController">
+        <table id="searchResults">
+            <tr>
+                <th>Name</th>
+                <th>Ciudad</th>
+            </tr>
+            <tr ng-repeat="data in usersData">
+                <td>{{data.Name}}</td>
+                <td>{{data.City}}</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>
